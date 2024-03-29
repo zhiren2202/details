@@ -1,8 +1,24 @@
-
-
+/***** layout *****/
 section {
   max-width: 1600px;
   margin: 3em auto;
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.innerbox {
+  width: 100%;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
 }
 
 h2 {
@@ -10,6 +26,7 @@ h2 {
   margin-bottom: 1em;
 }
 
+/***** TYPE1 - FAQ *****/
 .type1 {
   details {
     border-top: 1px solid #ddd;
@@ -60,5 +77,49 @@ h2 {
       color: #fff;
       font-weight: 700;
     }
+  }
+}
+
+/***** TYPE2 - TAB *****/
+.type2 {
+  .course_wrap {
+    width: 100%;
+
+    &:nth-of-type(1) {
+      .course_tab_btn {
+        width: 33%;
+        left: 0;
+        background-color: #eb720a;}
+    }
+
+    &:nth-of-type(2) {
+      .course_tab_btn {
+        width: 33%;
+        left: 33.5%;
+        background-color: #fa4a67;}
+    }
+
+    &:nth-of-type(3) {
+      .course_tab_btn {
+        width: 33%;
+        left: 67%;
+        background-color: #288ed7;}
+    }
+  }
+
+  .course_tab_btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .course_tab_con {
+    position: static;
+    margin-top: 4em;
+    background-color: #5a9cc6;
   }
 }
