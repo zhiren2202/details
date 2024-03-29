@@ -1,0 +1,52 @@
+section {
+  max-width: 1600px;
+  margin: 3em auto;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.type1 details {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.type1 details + details {
+  border-top: 0;
+}
+.type1 details[open] .question {
+  color: #407a33;
+  background-image: url(../images/angle-up.png);
+}
+.type1 .question {
+  padding: 1.5em 1em;
+  background-image: url(../images/angle-down.png);
+  background-repeat: no-repeat;
+  background-size: 30px 17px;
+  background-position: right 1em center;
+}
+.type1 .question::before {
+  content: "Q. ";
+  color: #407a33;
+}
+.type1 .answer {
+  position: relative;
+  padding: 1.5em 1em 1.5em 3.2em;
+  background-color: #fffef5;
+  border-top: 1px dashed #ddd;
+  word-break: keep-all;
+}
+.type1 .answer::before {
+  content: "A";
+  display: inline-block;
+  position: absolute;
+  top: 1.5em;
+  left: 1em;
+  padding: 0 0.5em;
+  margin: 0 0.5em 0 0;
+  background-color: #5a9cc6;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 700;
+}
