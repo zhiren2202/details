@@ -72,25 +72,27 @@ h2 {
 .type2 .innerbox {
   padding-top: 4em;
 }
-.type2 .course_wrap {
+
+.course_wrap {
   width: 100%;
 }
-.type2 .course_wrap:nth-of-type(1) .course_tab_btn {
+.course_wrap:nth-of-type(1) .course_tab_btn {
   width: 33%;
   left: 0;
   background-color: #eb720a;
 }
-.type2 .course_wrap:nth-of-type(2) .course_tab_btn {
+.course_wrap:nth-of-type(2) .course_tab_btn {
   width: 33%;
   left: 33.5%;
   background-color: #fa4a67;
 }
-.type2 .course_wrap:nth-of-type(3) .course_tab_btn {
+.course_wrap:nth-of-type(3) .course_tab_btn {
   width: 33%;
   left: 67%;
   background-color: #288ed7;
 }
-.type2 .course_tab_btn {
+
+.course_tab_btn {
   position: absolute;
   top: 0;
   left: 0;
@@ -99,7 +101,41 @@ h2 {
   color: #fff;
   font-weight: 700;
 }
-.type2 .course_tab_con {
+
+.course_tab_con {
   position: static;
   background-color: #5a9cc6;
+}
+
+/***** TYPE3 - TAB in TAB *****/
+.type3 .innerbox {
+  padding-top: 8em;
+}
+.type3 .course_tab_btn {
+  top: 4em;
+}
+
+.area_wrap {
+  width: 100%;
+}
+.area_wrap:nth-of-type(1) .area_tab_btn {
+  left: 0;
+}
+.area_wrap:nth-of-type(2) .area_tab_btn {
+  left: 33.5%;
+}
+.area_wrap:nth-of-type(3) .area_tab_btn {
+  left: 67%;
+}
+
+.area_tab_btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  width: 33%;
+  border: 1px solid #f64492;
+  text-align: center;
+  color: #f64492;
+  font-weight: 700;
 }
