@@ -43,7 +43,6 @@ body {
     color: #333;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    min-width: 280px;
 }
 
 ul,
@@ -151,4 +150,20 @@ table caption,
 textarea {
     width: 100%;
     resize: none;
+}
+
+summary {
+    cursor: pointer;
+    list-style: none;
+}
+
+/* Latest Chrome, Edge, Firefox */
+summary::marker {
+    display: none;
+    content: '';
+}
+
+/* Safari */
+summary::-webkit-details-marker {
+    display: none;
 }
