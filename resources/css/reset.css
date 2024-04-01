@@ -158,12 +158,24 @@ summary {
 }
 
 /* Latest Chrome, Edge, Firefox */
-summary::marker {
+/* summary::marker {
     display: none;
     content: '';
-}
+} */
 
 /* Safari */
-summary::-webkit-details-marker {
+/* summary::-webkit-details-marker {
     display: none;
+} */
+
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        font-size: 12px;
+    }
 }
