@@ -70,33 +70,32 @@ h2 {
 
 /***** TYPE2 - TAB *****/
 .type2 .innerbox {
-  padding-top: 4em;
+  padding-top: 3em;
+  background-color: #033D57;
 }
 
 .course_wrap {
   width: 100%;
 }
 .course_wrap:nth-of-type(1) .course_tab_btn {
-  width: 33%;
-  left: 0;
+  left: 3%;
   background-color: #eb720a;
 }
 .course_wrap:nth-of-type(2) .course_tab_btn {
-  width: 33%;
-  left: 33.5%;
+  left: 35%;
   background-color: #fa4a67;
 }
 .course_wrap:nth-of-type(3) .course_tab_btn {
-  width: 33%;
   left: 67%;
   background-color: #288ed7;
 }
 
 .course_tab_btn {
   position: absolute;
-  top: 0;
+  top: 1em;
   left: 0;
-  padding: 1em;
+  padding: 0.5em 1em;
+  width: 30%;
   border-radius: 30px;
   text-align: center;
   color: #fff;
@@ -106,7 +105,6 @@ h2 {
 .course_tab_con {
   position: static;
   padding: 1em;
-  background-color: #033D57;
   border-radius: 4px;
   color: #fff;
 }
@@ -119,48 +117,67 @@ h2 {
   background-size: 1.9375em 0.625em;
   background-position: left center;
 }
-.course_tab_con ul li:first-of-type {
+.course_tab_con ul li:first-of-type, .course_tab_con ul li:last-of-type {
   padding-left: 0;
   background: none;
+}
+.course_tab_con ul li a::after {
+  content: "+";
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.course_tab_con ul li a:hover::after, .course_tab_con ul li a:focus::after {
+  color: #445a8f;
+  background-color: #fff;
 }
 
 /***** TYPE3 - TAB in TAB *****/
 .type3 .innerbox {
-  padding-top: 4em;
+  padding-top: 5em;
+  background-color: #033D57;
 }
 
 .area_wrap {
   width: 100%;
 }
 .area_wrap:nth-of-type(1) .area_tab_btn {
-  left: 0;
+  left: 50%;
+  transform: translate(-8em, 0);
 }
 .area_wrap:nth-of-type(2) .area_tab_btn {
-  left: 33.5%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 .area_wrap:nth-of-type(3) .area_tab_btn {
-  left: 67%;
+  left: 50%;
+  transform: translate(3em, 0);
 }
 .area_wrap[open] .area_tab_btn {
   background-color: #f64492;
+  border: 1px solid #f64492;
   color: #fff;
 }
 
 .area_tab_btn {
   position: absolute;
-  top: 0;
+  top: 1em;
   left: 0;
-  padding: 1em;
-  width: 33%;
-  border: 1px solid #f64492;
+  padding: 0.5em 1em;
+  width: 5em;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  font-size: 1.25em;
   text-align: center;
-  color: #f64492;
+  color: #fff;
   font-weight: 700;
 }
 
 .area_tab_con {
   padding: 1em;
-  background-color: #033D57;
   color: #fff;
 }
 
@@ -174,10 +191,10 @@ h2 {
 
 .area__course {
   position: relative;
-  padding-top: 5em;
+  padding-top: 16em;
 }
 .area__course .course_tab_btn {
-  top: 1em;
+  top: 13em;
 }
 .area__course .course_tab_con {
   padding: 0;
