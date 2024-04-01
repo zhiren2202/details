@@ -104,7 +104,7 @@ h2 {
 
 .course_tab_con {
   position: static;
-  padding: 1em;
+  padding: 1em 3%;
   border-radius: 4px;
   color: #fff;
 }
@@ -197,7 +197,7 @@ h2 {
   top: 13em;
 }
 .area__course .course_tab_con {
-  padding: 0;
+  padding: 0 3%;
 }
 
 @media screen and (max-width: 1650px) {
